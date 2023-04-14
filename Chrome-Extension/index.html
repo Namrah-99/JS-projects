@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-item" id="question1">
+            <a class="accordion-link" href="#question1">
+              <h5>Exchange Rate Convertor</h5>
+              <i class="icon ion-md-arrow-forward"></i>
+              <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer">
+              <div class="grid-section-1">
+                <div><input
+                  type="number"
+                  id="amount"
+                  placeholder="Enter an amount (USD)"
+                /></div>
+                <div> <select name="currency" id="currency">
+                  <option value="EUR">EUR</option>
+                  <option value="CAD">CAD</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="PKR">PKR</option>
+                </select></div>
+                <div><button id="convert">Convert Currency</button></div>
+                <div class="results" id="result"></div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="accordion-item" id="question2">
+            <a class="accordion-link" href="#question2">
+              <h5>Lead Tracker</h5>
+              <i class="icon ion-md-arrow-forward"></i>
+              <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer flexDivVer">
+              <div class="grid-section-2">
+                <div>
+                  <input
+                    type="text"
+                    id="input-el"
+                    placeholder="type link ... "
+                  />
+                </div>
+                <div><button id="input-btn">Save Input</button></div>
+                <div><button id="save-tab-btn">Save Tab</button></div>
+                <div> <button id="delete-btn">Delete All</button></div>
+                
+                <div><ul id="ul-el"></ul></div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="accordion-item" id="question3">
+            <a class="accordion-link" href="#question3">
+              <h5>PX and REM Convertor</h5>
+              <i class="icon ion-md-arrow-forward"></i>
+              <i class="icon ion-md-arrow-down"></i>
+            </a>
+            <div class="answer flexDivVer">
+              <div class="grid-section-3">
+                <div><label for="input-px-units">Value in px : </label></div>
+                <div><input
+                    type="text"
+                    id="input-px-units"
+                    placeholder="type ..."
+                  /></div>
+                <div class="resultsSt" id="result-rem-units">
+                 
+                </div>
+                <div><label for="input-rem-units">Value in rem : </label></div>
+                <div><input
+                    type="text"
+                    id="input-rem-units"
+                    placeholder="type ..."
+                  /></div>
+               <div class="resultsSt" id="result-px-units">
+                </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- manifest.json ->  way to store and send data from server to client (browser)
+in our case, using manifest.json to configure our app and provide meta data about it
+ action -> it confugues what happens when user clicks on our app from Google chrome extension toolbar
+-->
