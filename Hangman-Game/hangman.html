@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman (Game)</title>
+    <link rel="stylesheet" href="hangman.css" />
+  </head>
+  <body>
+    <div id="home">
+      <h1 class="title">Hangman</h1>
+      <button class="button anim" onclick="startGame()">Play</button>
+      <div class="footer">Coded by Namrah</div>
+    </div>
+    <div id="result" class="h">
+      <h2 class="title" id="rT"></h2>
+      <div class="body" id="rM"></div>
+      <button class="button anim" onclick="startGame()">Try Again?</button>
+    </div>
+    <div id="pGame">
+      <div id="letter"></div>
+      <div id="game">
+        <div class="player">
+          <div class="playerModel">
+            <div class="head" data="false" id="g4"></div>
+            <div class="body" data="false" l="false" r="false" id="g5"></div>
+            <div class="foot" data="false" l="false" r="false" id="g6"></div>
+          </div>
+        </div>
+        <div class="stang3" data="false" id="g3"></div>
+        <div class="stang2" data="false" id="g2"></div>
+        <div class="stang" data="false" id="g1"></div>
+        <div class="ground" data="false" id="g0"></div>
+        <div class="hintButton" data="false" id="hintButton" onclick="hint()">
+          ?
+        </div>
+      </div>
+      <div id="tastatur">
+        <div id="moveKeyboard">
+          <div class="marg"></div>
+        </div>
+        <div id="keyboard"></div>
+      </div>
+      <div class="hint" id="hint">
+        <div class="title">
+          Hint
+          <div class="exit" onclick="hintExit()">X</div>
+        </div>
+        <div class="body" id="hintText"></div>
+      </div>
+    </div>
+    <script src="hangman.js"></script>
+  </body>
+</html>
